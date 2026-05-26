@@ -12,6 +12,7 @@ on:
 permissions:
   contents: write
   issues: write
+  actions: write
 
 # Serialize all RSVP writes so two simultaneous submits don't race on the CSV.
 concurrency:
@@ -68,4 +69,18 @@ jobs:
               state: 'closed',
               state_reason: ok ? 'completed' : 'not_planned',
               labels: ok ? ['rsvp', 'processed'] : ['rsvp', 'invalid'],
+            });
+
+      # GITHUB_TOKEN ile yapılan push downstream workflow tetiklemediği için
+      # Deploy'u burada manuel olarak başlatıyoruz.
+      - name: Trigger Deploy workflow
+        if: steps.process.outcome == 'success'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'deploy.yml',
+              ref: context.payload.repository.default_branch,
             });
