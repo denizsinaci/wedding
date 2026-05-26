@@ -40,10 +40,11 @@ export const metadata: Metadata = {
     locale: 'tr_TR',
     images: [
       {
-        url: '/og-image.svg',
-        width: 1200,
-        height: 630,
-        alt: 'Süheylanur & Deniz Wedding',
+        url: '/picturestoreplace/davetiye.jpeg',
+        width: 1654,
+        height: 1654,
+        alt: 'Süheylanur & Deniz · 25 Temmuz 2026 Düğün Davetiyesi',
+        type: 'image/jpeg',
       },
     ],
   },
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Süheylanur & Deniz · 25 Temmuz 2026',
     description: 'Mutluluğumuza davetlisiniz...',
-    images: ['/og-image.svg'],
+    images: ['/picturestoreplace/davetiye.jpeg'],
   },
   icons: {
     icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
