@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#FBF8F3"/>
+      <stop offset="100%" stop-color="#F1E8D8"/>
+    </linearGradient>
+    <linearGradient id="petal" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#D8A7A0"/>
+      <stop offset="100%" stop-color="#B08FA0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g opacity="0.5">
+    <g transform="translate(140 130)" fill="url(#petal)">
+      <ellipse cx="0" cy="-40" rx="22" ry="38"/>
+      <ellipse cx="40" cy="0" rx="38" ry="22"/>
+      <ellipse cx="0" cy="40" rx="22" ry="38"/>
+      <ellipse cx="-40" cy="0" rx="38" ry="22"/>
+      <circle r="14" fill="#B08D55"/>
+    </g>
+    <g transform="translate(1060 500)" fill="url(#petal)">
+      <ellipse cx="0" cy="-30" rx="18" ry="30"/>
+      <ellipse cx="30" cy="0" rx="30" ry="18"/>
+      <ellipse cx="0" cy="30" rx="18" ry="30"/>
+      <ellipse cx="-30" cy="0" rx="30" ry="18"/>
+      <circle r="11" fill="#B08D55"/>
+    </g>
+    <path d="M 0 560 C 200 520, 350 600, 600 540 S 1000 560, 1200 510" stroke="#A8B89A" stroke-width="2" fill="none" opacity="0.6"/>
+  </g>
+
+  <text x="600" y="290" text-anchor="middle" font-family="Playfair Display, serif" font-size="34" fill="#7A5969" letter-spacing="12">SAVE THE DATE</text>
+  <text x="600" y="400" text-anchor="middle" font-family="Playfair Display, serif" font-style="italic" font-size="96" fill="#3A2A33">Süheylanur &amp; Deniz</text>
+  <text x="600" y="470" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" fill="#7A5969" letter-spacing="6">25 · 07 · 2026</text>
+  <line x1="450" y1="500" x2="750" y2="500" stroke="#B08D55" stroke-width="1"/>
+  <text x="600" y="540" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" fill="#7A5969">Peridot Garden · Bursa</text>
+</svg>
